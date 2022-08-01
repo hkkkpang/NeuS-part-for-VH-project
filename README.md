@@ -3,11 +3,10 @@ This is the code file for the NeuS part in "Learning Animatable Avatars with Mul
 We use codes from [official NeuS repository](https://github.com/Totoro97/NeuS) to generate meshes for further steps. 
 
 We need to process ZJU-MoCap data files to satisfy the data convention define below. The dataset is stored in ETH Euler Cluster: /cluster/project/infk/263-5906-00L/data/ZJU-MoCap.
-We can select the specified frame from different camera views in "Camera (i)" file to form the image file. We can also adopt same operation from "mask_cihp"
-to generate mask file. To cameras npz file, we conduct the following steps:
+We can select the specified frame from different camera views in "Camera (i)" file to form the image file. Especially, we can change the .jpg file to .png file by the first part of preprocess.ipynb. We can also adopt same operation from "mask_cihp" to generate mask file. To cameras npz file, we conduct the following steps:
 
 1. Download the annots.py file to the prepocess file. For example, we download the annots.py for 313 sequence from /cluster/project/infk/263-5906-00L/data/ZJU-MoCap/CoreView_313.
-2. Run the preprocess.ipynb to get the cameras.npz file.
+2. Run the the second part of preprocess.ipynb to get the cameras.npz file.
 3. Run the normalize_cameras.py to get the final file.
 4. Move it to the corresponding data file.
 
