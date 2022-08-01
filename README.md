@@ -11,7 +11,7 @@ to generate mask file. To cameras npz file, we conduct the following steps:
 3. Run the normalize_cameras.py to get the final file.
 4. Move it to the corresponding data file.
 
-After getting the data file, we move them to public_data file. There are two example files in public_data. They are all from the first frame across different camera.
+After getting the data file, we move them to public_data file. There are two example files in public_data. They are all from the first frame across different cameras.
 
 Then we can run the training process:
 ```shell
